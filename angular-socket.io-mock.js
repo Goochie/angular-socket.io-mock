@@ -38,6 +38,15 @@ ng.provider("socketFactory",function(){
         }
       }
 
+        //simulate an inbound message to the socket from the server (only called from the test)
+        obj.forward = function(eventName){
+
+
+             //additional API for forwarding events to the angular context
+
+        }
+
+
       return obj
     };
   }
